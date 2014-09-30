@@ -1,0 +1,16 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <remove-node path="/api/package[starts-with(@name, 'khandroid')]" />
+<!--  <attr path="/api/package[@name='com.android.volley']/interface[starts-with(@name, 'Request.Method')]"-->
+<!--  name="argsType">RequestMethod</attr>-->
+  <remove-node path="/api/package[@name='com.android.volley']/interface[starts-with(@name, 'Request.Method')]"/>
+  <remove-node path="/api/package[starts-with(@name, 'com.android.volley.toolbox')]"/>
+   <remove-node path="/api/package[@name = 'com.instabug.library.db.AsyncTasks']"/>
+</metadata>

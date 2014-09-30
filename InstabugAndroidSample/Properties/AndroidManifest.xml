@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="InstabugAndroidSample.InstabugAndroidSample">
+	<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19" />
+	<application android:label="InstabugAndroidSample" android:name="instabugandroidsample.SampleApplication">
+		<activity android:name="com.instabug.wrapper.impl.v10.InstabugAnnotationActivity" android:windowSoftInputMode="adjustPan" android:theme="@style/AppBaseTheme" />
+		<service android:name="com.instabug.library.network.UploadCacheService" />
+		<receiver android:name="com.instabug.library.network.InstabugNetworkReceiver">
+			<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+		</receiver>
+		<meta-data android:name="com.instabug.DevelopmentAppToken" android:value="YOUR_API_KEY" />
+		<meta-data android:name="com.instabug.ProductionMode" android:value="false" />
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+</manifest>

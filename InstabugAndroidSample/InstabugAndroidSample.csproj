@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{59C7906B-CFED-457A-A115-6FD54B9338EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>InstabugAndroidSample</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>InstabugAndroidSample</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <JavaMaximumHeapSize>2G</JavaMaximumHeapSize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\Components\xamandroidsupportv7appcompat-20.0.0.1\lib\android\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\Components\xamandroidsupportv7appcompat-20.0.0.1\lib\android\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleApplication.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\anim\shake_animation.xml" />
+    <AndroidResource Include="Resources\drawable\blue_circle.xml" />
+    <AndroidResource Include="Resources\drawable\card_background.xml" />
+    <AndroidResource Include="Resources\drawable\container_dropshadow.xml" />
+    <AndroidResource Include="Resources\drawable\gray_circle.xml" />
+    <AndroidResource Include="Resources\drawable\green_circle.xml" />
+    <AndroidResource Include="Resources\drawable\instabug_logo.png" />
+    <AndroidResource Include="Resources\drawable\instabug_text_box.xml" />
+    <AndroidResource Include="Resources\drawable\orange_circle.xml" />
+    <AndroidResource Include="Resources\drawable\red_circle.xml" />
+    <AndroidResource Include="Resources\drawable\shake_2.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_1.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_10.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_11.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_12.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_13.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_14.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_15.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_16.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_17.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_18.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_19.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_2.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_20.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_21.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_22.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_23.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_3.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_4.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_5.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_6.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_7.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_8.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_9.png" />
+    <AndroidResource Include="Resources\drawable\tutorial_animation.xml" />
+    <AndroidResource Include="Resources\drawable\yellow_circle.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\button_pen.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\button_text.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\button_trash.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_ab_done.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_bug.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_send_now.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\instabug_logo_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\button_pen.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\button_text.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\button_trash.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_ab_done.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_bug.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_send_now.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\instabug_logo_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\button_pen.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\button_text.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\button_trash.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_ab_done.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_bug.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_send_now.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\instabug_logo_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\button_pen.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\button_text.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\button_trash.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_ab_done.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_bug.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_send_now.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\instabug_logo_light.png" />
+    <AndroidResource Include="Resources\layout\activity_instabug.xml" />
+    <AndroidResource Include="Resources\layout\animated_dialog.xml" />
+    <AndroidResource Include="Resources\layout\color_selector_layout.xml" />
+    <AndroidResource Include="Resources\layout\composer_dialog.xml" />
+    <AndroidResource Include="Resources\layout\description_composer.xml" />
+    <AndroidResource Include="Resources\layout\feedback_composer_dialog.xml" />
+    <AndroidResource Include="Resources\menu\annotation_activity_menu.xml" />
+    <AndroidResource Include="Resources\menu\instabug_support_activity_menu.xml" />
+    <AndroidResource Include="Resources\menu-v14\annotation_activity_menu.xml" />
+    <AndroidResource Include="Resources\menu-v14\instabug_support_activity_menu.xml" />
+    <AndroidResource Include="Resources\raw\create_bugreports_table" />
+    <AndroidResource Include="Resources\raw\instabugserver.bks" />
+    <AndroidResource Include="Resources\values\values.xml" />
+    <AndroidResource Include="Resources\values-ar\values.xml" />
+    <AndroidResource Include="Resources\values-de\values.xml" />
+    <AndroidResource Include="Resources\values-es\values.xml" />
+    <AndroidResource Include="Resources\values-fr\values.xml" />
+    <AndroidResource Include="Resources\values-it\values.xml" />
+    <AndroidResource Include="Resources\values-ja\values.xml" />
+    <AndroidResource Include="Resources\values-ko\values.xml" />
+    <AndroidResource Include="Resources\values-pl\values.xml" />
+    <AndroidResource Include="Resources\values-pt-rBR\values.xml" />
+    <AndroidResource Include="Resources\values-pt-rPT\values.xml" />
+    <AndroidResource Include="Resources\values-ru\values.xml" />
+    <AndroidResource Include="Resources\values-sl\values.xml" />
+    <AndroidResource Include="Resources\values-sw600dp-v13\values.xml" />
+    <AndroidResource Include="Resources\values-tr\values.xml" />
+    <AndroidResource Include="Resources\values-v11\styles.xml" />
+    <AndroidResource Include="Resources\values-v14\styles.xml" />
+    <AndroidResource Include="Resources\values-w820dp-v13\values.xml" />
+    <AndroidResource Include="Resources\values-xlarge-v4\values.xml" />
+    <AndroidResource Include="Resources\values-zh-rCN\values.xml" />
+    <AndroidResource Include="Resources\values-zh-rTW\values.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\InstabugAndroid\InstabugAndroid.csproj">
+      <Project>{CB142507-1844-488E-9FAB-014025AD373B}</Project>
+      <Name>InstabugAndroid</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\res\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="xamandroidsupportv7appcompat">
+      <Version>20.0.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>
